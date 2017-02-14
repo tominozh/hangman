@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/UI_Prefferences"
+        android:key="ui_preferences">
+
+        <SwitchPreference
+            android:title="@string/sound_effects"
+            android:key="soundEffects"
+            android:summary="@string/Enables_sound_efects"
+            android:defaultValue="true">
+
+        </SwitchPreference>
+
+        <SwitchPreference
+            android:title="@string/vibration"
+            android:key="@string/vibration"
+            android:summary="@string/enable_vib"
+            android:defaultValue="true">
+
+        </SwitchPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/game_options"
+        android:key="@string/game_options">
+
+
+        <ListPreference
+            android:title="@string/difficulties"
+            android:key="DIFFICULTY"
+            android:summary="@string/choose_dif"
+            android:entries="@array/DIFFICULTY_ENTRIES"
+            android:entryValues="@array/DIFFICULTY_VALUES"
+            android:defaultValue="EASY"
+            >
+
+        </ListPreference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

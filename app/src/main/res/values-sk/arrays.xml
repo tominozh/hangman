@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="DIFFICULTY_ENTRIES">
+        <item>Lahká Obtiažnosť</item>
+        <item>Stredná Obtiažnosť</item>
+        <item>Ťažká Obtiažnosť</item>
+    </string-array>
+
+    <string-array name="DIFFICULTY_VALUES">
+        <item>EASY</item>
+        <item>MEDIUM</item>
+        <item>HARD</item>
+    </string-array>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="haladektomas.mynewappdevcompany.ie.hangman.MultiPlayerActivity"
+    android:background="@drawable/gradient_rectangle"
+    >
+
+    <include
+        android:id="@id/tool_bar"
+        layout="@layout/toolbar">
+    </include>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/myLayout"
+    android:layout_below="@id/tool_bar"
+    android:padding="16dp"
+    android:layout_alignParentEnd="false"
+    android:gravity="end">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_button"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/go_button_icon"
+        android:foregroundGravity="right"
+        android:visibility="visible"
+        android:layout_gravity="bottom"
+        android:contentDescription="@string/go_btn"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myLayout"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout3"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hit"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:id="@+id/textView_hit"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            android:id="@+id/textView_miss"
+            android:layout_gravity="end"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/miss"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/textView4"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_word"
+            android:hint="@string/enter_word"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

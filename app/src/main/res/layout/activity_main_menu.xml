@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="haladektomas.mynewappdevcompany.ie.hangman.MainMenuActivity"
+    android:background="@drawable/gradient_rectangle">
+
+
+    <include
+        android:id="@+id/toolbar_main_screen"
+        layout="@layout/toobar_main_screen"
+        >
+
+
+    </include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main_screen"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:background="@drawable/gradient_rectangle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/highscoretable"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textSize="20dp" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView_table"
+            android:choiceMode="none"
+            android:layout_weight="0.78" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_player"
+                android:id="@+id/button"
+                android:layout_marginRight="10dp"
+                android:onClick="SinglePlayerGame" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multi_player"
+                android:id="@+id/button2"
+                android:layout_marginRight="10dp"
+                android:onClick="MultiPlayerGame" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

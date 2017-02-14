@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bcd4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#00bfa5</color>
+    <color name="aa_mygreen">#009a57</color>
+    <color name="aa_myblue">#0ea7b5</color>
+    <color name="aa_myred">#d9432f</color>
+    <color name="aa_mygrey">#ced6d8</color>
+    <color name="aa_mylightblue">#5ebdec</color>
+    <color name="aa_dialog_background">#96ceb4</color>
+
+</resources>
